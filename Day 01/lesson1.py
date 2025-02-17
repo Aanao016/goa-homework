@@ -24,17 +24,11 @@ left(90)
 #drawing a door
 
 
-forward(70)
+forward(300)
 begin_fill()
 color("yellow")
 left(90)
 forward(120)   #hright of the door
-right(90)
-forward(60)
-right(90)
-forward(120)
-end_fill()
-
 penup()
 goto(200, 200)
 pendown()
