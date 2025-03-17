@@ -1,0 +1,41 @@
+# კომენტარებით ახსენით თუ რა არის snake_case და რისთვის გამოიყენება ის. მოიყვანეთ მაგალითები
+
+#არის სიმბოლოების სტილი, რომელიც გამოიყენება შეცვლადი სახელების, ფუნქციებისა და მეთოდების
+#დასახელებისთვის პროგრამირებაში. ამ სტილში ყველა სიტყვა დაიწერება პატარა ასოებით, 
+#ხოლო სიტყვებს შორის გამოიყენება _
+
+#My_name_is_anano
+# i_have_homework_today
+
+# რას გამოიტანს შემდეგი კოდი და რატომ:
+
+number1 = 10
+number2 = 20
+sum_of_numbers = number1 + number2
+print(sum_of_numbers)
+
+# კოდი გამოიტანს NameError შეცდომას,
+#  რადგან მეორე სტრიქონში ცვლადი sum_of_numbers არის დაწერილი პატარა ასოებით,
+#  ხოლო print(sum_Of_numbers) იყენებს დიდ ასოებს.
+# ამიტომ უნდა შესრულდეს ესე:
+
+number1 = 10
+number2 = 20
+sum_of_numbers = number1 + number2
+print(sum_of_numbers)
+
+
+# დაწერეთ პროგრამა, რომელიც გამოითვლის 5 რიცხვის საშუალო არითმეტიკულს, მიღებული რიცხვი შეინახეთ ცვლადში, აიყვანეთ კუბში(მესამე ხარისხში) და დაბეჭდეთ.
+
+
+number1 = float(input(10))
+number2 = float(input(20))
+number3 = float(input(30))
+number4 = float(input(40))
+number5 = float(input(50))
+
+average = (number1 + number2 + number3 + number4 + number5)
+
+cubed_average = average ** 3
+
+print(cubed_average)

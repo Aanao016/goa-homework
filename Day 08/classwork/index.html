@@ -1,0 +1,26 @@
+Name = "Nika"
+naMe = "Luka"
+NAME = "Data"
+naME = "Vano"
+name = "Demetre"
+NaMe = "Jan"
+name = "Giorgi"
+
+#რამდენი ცვლადი შეიქმნება ამ კოდის მიხედვით?(აღწერეთ რატომ)
+#შეიქმნება 6 რადგან თუ ერთი ასო მაინც განსხვავდებულია ახალი ცვლადი იქმნება ამიტმაც აქ დაიბეწდება 6 ცვლადი.
+
+#შექმენით 5 ცვლადი, snake_case-ის გამოყენებით და დაბეჭდეთ
+
+
+my_name_is ="anano"
+i_love ="cat"
+i_love ="food"
+my_favourite_anime_is ="one_piece"
+my_favourite_season_is ="summer"
+
+
+print(my_name_is_anano)
+print(i_love_cat)
+print(i_love_food)
+print(my_favourite_season_is_summer)
+print(my_favorite_anime_is_one_pece)
