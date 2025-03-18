@@ -9,8 +9,8 @@ print("Hello", name, surname)
 
 # მომხარებელს შემოატანინეთ 3 რიცხვი და დაბეჭდეთ მათი ნამრვალი
 
-number1 =input(enter a number: )
-number2 =input(enter a number: )
-number3 =input(enter a number: )
+number1 =input("enter a number: ")
+number2 =input("enter a number: ")
+number3 =input("enter a number: ")
 
 print(int(number1)+int(number2)+int(number3))
