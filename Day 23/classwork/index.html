@@ -1,0 +1,31 @@
+<!-- 1) შექმენით ფორმა, სადაც მომხმარებელს შემოატანინებთ სახელს, გვარს, ასაკს, ემაილს, პაროლს და დაბადების თარიღს.
+
+გვარის და დაბადების თარიღის შემოტანა უნდა იყოს ნებაყოფლობითი, ხოლო დანარჩენის აუცილებელი.
+
+გამოიყენეთ შემდეგი ატრიბუტები: type, placeholder, required. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>რეგისტრაციის ფორმა</title>
+</head>
+<body>
+  <h2>რეგისტრაციის ფორმა</h2>
+  <form>
+    <input type="text" name="first_name" placeholder="სახელი" required><br><br>
+
+    <input type="text" name="last_name" placeholder="გვარი"><br><br>
+
+    <input type="number" name="age" placeholder="ასაკი" required><br><br>
+
+    <input type="email" name="email" placeholder="ემაილი" required><br><br>
+
+    <input type="password" name="password" placeholder="პაროლი" required><br><br>
+
+    <input type="date" name="birth_date" placeholder="დაბადების თარიღი"><br><br>
+
+    <button type="submit">გაგზავნა</button>
+  </form>
+</body>
+</html>
