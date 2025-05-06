@@ -1,0 +1,136 @@
+<!-- 2) კომენტარებით ახსენით და ისაუბრეთ radio/checkbox ტიპის input-ებზე. -->
+<p>which food do you like?</p>
+<input type="checkbox" id="pizza" name="food" value="pizza">
+<label for="pizza">pizza</label>
+
+<input type="checkbox" id="burger" name="food"value="burger">
+<label for="burger">burger</label>
+
+<input type="checkbox" id="sushi" name="food" value="burger">
+<label for="sushi"> sushi</label>
+
+<!--  3) გაიმეორეთ ყველა ნასწავლი ატრიბუტი რომლებიც ეხება ფორმებს: type, name, 
+ id, for, value, placeholder, required. კარგი იქნება თუ ჩამოწერთ, რისთვის გამოიყენება ისინი  -->
+<!-- type-ინგლისური სიტყვა და ნიშნავს ტიპს პროგრამირებაში type თუნქცია განსაზღვრავს <input> ველის ტიპს მაგ (text,password,email,submit.) 
+name-არის იგივე ნებისმიერი სახელით შემოტანილი ცვლად.
+id-ხშირად გამოიყენება label-თან ერთად,id არის იგივე ელემენტის უნიკალური ნომერი. 
+for-არის ატრიბუტი რომელიც გამოიყენება label ელემენტში.
+value-ანიჭებს ღირებულებას იმ ელემენტებს რომელიც შეაქვს ან აჩვენებს.
+placeholder- არის ატრიბუტი რომელიც გამოიყენება input-ის ველებში იმისთვის ,რომ მომხმარებელს მიანიშნოს რა უნდა შეიყვანოს იქ,ეს არის დროებითი კოდი რომელიც ჩანს ველში.
+required-არის ბულიანური ატრიბუტი რომელსაც ვამატებთ ფორმის ველს. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>სარეგისტრაციო ფორმა</title>
+</head>
+<body>
+  <form>
+    <label for="firstName">სახელი:</label>
+    <input 
+      type="text" 
+      id="firstName" 
+      name="firstName" 
+      value="" 
+      placeholder="შეიყვანე სახელი" 
+      required
+    >
+    <br><br>
+    <label for="lastName">გვარი:</label>
+    <input 
+      type="text" 
+      id="lastName" 
+      name="lastName" 
+      value="" 
+      placeholder="შეიყვანე გვარი" 
+      required
+    >
+    <br><br>
+
+    <label for="email">ელ. ფოსტა:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      value="" 
+      placeholder="example@mail.com" 
+      required
+    >
+    <br><br>
+
+    <label for="password">პაროლი:</label>
+    <input 
+      type="password" 
+      id="password" 
+      name="password" 
+      value="" 
+      placeholder="შეიყვანე პაროლი" 
+      required
+    >
+    <br><br>
+
+    <input 
+      type="submit" 
+      value="გაგზავნა"
+    >
+  </form>
+</body>
+</html>
+
+<!-- 4) შექმენით პროდუქტების დამატების ფორმა. მომხარებელს შემოატანინეთ პროდუქტის სახელი, მისი ფასი და გამოშვების თარიღი. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>products</title>
+    <form>
+        <label for="productsName">პროდუქტის სახელი:</label>
+        <input type="productName" name="productName" placeholder="ხინკალი"required> 
+        
+        <label for="price">პასი</label>
+        <input type="number" id="price" name="">
+    </form>
+</body>
+</html>
+<!-- 5) შექმენით ერთგვერდიანი საიტი თავისუფალ თემაზე. გამოიყენეთ ყველა ნასწავლი მასალა, მათ შორის ფორმებიც. შეეცადეთ ახსნათ ყველაფერი კომენტარებით.  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>დაგვიკავშირდით</title>
+</head>
+<body>
+
+  <!-- გვერდის სათაური -->
+  <h1>დაგვიკავშირდით</h1>
+  <p>გაქვთ შეკითხვა ან წინადადება? შეავსეთ ფორმა ქვემოთ:</p>
+
+  <!-- ფორმის დასაწყისი -->
+  <form action="#" method="post">
+    
+    <!-- მომხმარებლის სახელი -->
+    <label for="name">სახელი:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- ელფოსტის ველი -->
+    <label for="email">ელფოსტა:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- შეტყობინების ველი -->
+    <label for="message">შეტყობინება:</label><br>
+    <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+    <!-- გაგზავნის ღილაკი -->
+    <button type="submit">გაგზავნა</button>
+
+  </form>
+  <!-- ფორმის დასასრული -->
+
+  <!-- ქვედა ტექსტი -->
+  <p>© 2025 პატარა ბიზნესი</p>
+
+</body>
+</html>
