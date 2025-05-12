@@ -1,0 +1,42 @@
+<!-- შექმენით სარეგისტრაციო ფორმა. მომხმარებელს შემოატანინეთ სახელი, ემაილი, პაროლი და მისი საცხოვრებელი ქვეყანა(დაგჭირდებათ drop down menu). მომხმარებელს უნდა ჰქონდეს მინიმუმ 5 ქვეყნის არჩევის უფლება. მათ შორის უნდა იყოს საქართველო. გამოიყენეთ selected ატრიბუტი და საქართველო გახადეთ წინასწარ არჩეული.
+
+თითოეულ oprion თეგს გაუწერეთ თავისი value ატრიბუტი, სადაც ჩაწერთ ქვეყნის შემოკლებულ სახელს
+
+მაგალითად: Georgia -> GEO -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+<form action="#" method="post">
+    <h2>enter your name</h2>
+<label for="name"> სახელი:</label>
+<input type="text" id="name" name="name">
+<br><br>
+<label for="email" >ემაილი:</label>
+<input type="email" id="email" name="email">
+<br><br>
+
+<input type="radio" id="female"required>
+<label for="female">female</label>
+<input type="radio"id="male"required>
+<label for="male"> male</label>
+<br><br>
+<label for="password">პაროლი:</label>
+<input type="text" id="password"required>
+<br><br>
+    <label for="country">choose your country:</label><br>
+<select name="country" id="country">
+    <option value="Georgia"select>geo</option>
+    <option value="Iyaly">ita</option>
+    <option value="tailand">tai</option>
+    <option value="korea">kor</option>
+    <option value="USE">USE</option>
+</select>
+<br><br>
+<button type="submit">gagzavna</button>
+</form>
+</body>
+</html>
