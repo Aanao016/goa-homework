@@ -1,0 +1,66 @@
+ <!-- 2) კომენტარის სახით ახსენით რა არის - semantic tags - -->
+<!--Semantic tags არის HTML ელემენტები, რომლებიც ამოკითხვით და აღნიშნავენ თავიანთ შინაარსს.-->
+
+ <!-- 3) განმარტეთ რისთვის გამოიყენება თითოეული page layout თეგი: header, main, footer, article, section. -->
+<!-- <header> -გვერდის ან სექციის თავნაგალია, შეიცავს ლოგოს, ნავიგაციას, სათაურს და სხვა მნიშვნელოვან ინფორმაციას, რომელიც ანომებელს აღწერს.
+<main> - მთავარ კონტენტს შეიცავს, რაც გვერდის ძირითადი თემა და მიზანია. გვერდზე მხოლოდ ერთი <main> შეიძლება იყოს.
+<footer> - გვერდის ან სექციის ბოლოში მდებარე ქვედა ნაპირზეა, ხშირად შეიცავს ავტორის უფლებების ინფორმაციას, საკონტაქტო დეტალებს და ნავიგაციის დამატებით ბმულებს.
+<article> - დამოუკიდებელი, თვითკმარი კონტენტის ბლოკი, როგორიცაა ბლოგპოსტი, სიახლე, ან კომენტარი.
+<section> - თემატური განყოფილება გვერდზე, რომელიც ხშირად სათაურით არის გამიჯნული და შეიძლება შეიცავდეს სხვა ელემენტებს. -->
+
+ <!-- 4) შექმენით 6 სხვადასხვა სახის სათაური, გასტილეთ ისინი სხვადასხვანაირად inline css-ის მეშვეობით, გამოიყენეთ დღევანდელ გაკვეთილზე ნასწავლი მასალა. -->
+
+<h1 style="color: darkblue; font-size: 36px; text-align: center;">სათაური 1 - მთავარი</h1>
+<h2 style="color: green; font-size: 30px; text-align: left;">სათაური 2 - სექცია</h2>
+<h3 style="color: darkred; font-size: 26px; text-align: right;">სათაური 3 - მცირე თემები</h3>
+<h4 style="color: purple; font-size: 22px; text-align: center; background-color: lightgray;">სათაური 4 - ქვესექცია</h4>
+<h5 style="color: orange; font-size: 18px; text-align: left; border: 1px solid orange;">სათაური 5 - ყურადღება</h5>
+<h6 style="color: black; font-size: 14px; text-align: right; background-color: yellow;">სათაური 6 - მცირე და წვრილი</h6>
+ <!-- 5) შექმენით საიტი თავისუფალ თემაზე, რომელშიც გამოიყენებთ ყველაფერს რაც აქამდე ისწავლეთ და ელემენტების სტილის შეცვლას ყველა მახასაიათებელით რაც ისწავლეთ style ატრიბუტთან ერთად: color, background-color, font-size, text-align, border. -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ჩემი საყვარელი წიგნები</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5;">
+
+  <header style="background-color: #4a90e2; color: white; padding: 20px; text-align: center; border: 2px solid #357ABD;">
+    <h1 style="font-size: 36px; margin: 0;">ჩემი საყვარელი წიგნები</h1>
+    <nav>
+      <a href="#book1" style="color: white; margin: 0 15px; text-decoration: none; font-size: 18px;">წიგნი 1</a>
+      <a href="#book2" style="color: white; margin: 0 15px; text-decoration: none; font-size: 18px;">წიგნი 2</a>
+      <a href="#book3" style="color: white; margin: 0 15px; text-decoration: none; font-size: 18px;">წიგნი 3</a>
+    </nav>
+  </header>
+
+  <main style="background-color: white; padding: 20px; border: 2px solid #ccc;">
+
+    <article id="book1" style="border: 1px solid #4a90e2; margin-bottom: 20px; padding: 15px; background-color: #e6f0ff;">
+      <h2 style="color: #2a5dba; font-size: 28px; text-align: left; margin-top: 0;">წიგნი 1: “1984”</h2>
+      <section style="font-size: 18px; color: #333; text-align: justify;">
+        <p>“1984” არის ჯორჯ ორუელის ცნობილი დისტოპიური რომანი, რომელიც აღწერს ტოტალიტარულ სახელმწიფოს კონტროლს და პირადი თავისუფლების შეზღუდვას.</p>
+      </section>
+    </article>
+
+    <article id="book2" style="border: 1px solid #e67e22; margin-bottom: 20px; padding: 15px; background-color: #fff4e6;">
+      <h2 style="color: #d35400; font-size: 28px; text-align: left; margin-top: 0;">წიგნი 2: “მოსიარულე მკვდრები”</h2>
+      <section style="font-size: 18px; color: #333; text-align: justify;">
+        <p>ამ წიგნმა, ავტორ რობერტ კირკმანის მიერ, მოუტანა ახალი სიცოცხლე ზომბების ჟანრს კომიქსებში და ტელესერიალშიც.</p>
+      </section>
+    </article>
+
+    <article id="book3" style="border: 1px solid #27ae60; margin-bottom: 20px; padding: 15px; background-color: #e8f8f5;">
+      <h2 style="color: #16a085; font-size: 28px; text-align: left; margin-top: 0;">წიგნი 3: “მონების კუნძული”</h2>
+      <section style="font-size: 18px; color: #333; text-align: justify;">
+        <p>ამ ისტორიულ რომანში აღწერილია მონობის მძიმე წარსული და თავისუფლებისთვის ბრძოლის ამბავი.</p>
+      </section>
+    </article>
+
+  </main>
+
+  <footer style="background-color: #222; color: #bbb; text-align: center; padding: 15px; border-top: 3px solid #444; font-size: 14px;">
+  </footer>
+
+</body>
+</html>
