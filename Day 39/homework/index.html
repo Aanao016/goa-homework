@@ -1,0 +1,210 @@
+<!-- 2) დავალების აღწერა:
+
+დავალებად გექნებათ GOA (Goal Oriented Academy)-ზე ვებსაიტის შექმნა, რომელიც სრული და ეფექტური იქნება ვებსაიტის ძირითადი ელემენტების გამოყენებით. თქვენი ვებსაიტი უნდა მოიცავდეს ინფორმაცია კურსების შესახებ, სურათები, ვიდეოები, აკადემიის სოციალური ლინკები და სხვა შესაბამისი ინფორმაცია, რაც საინტერესო გახდის საიტს მისი დამთვალიერებლისთვის.
+
+
+ინსტრუქციები:
+
+ვებსაიტის სტრუქტურა:
+შექმენით მინიმუმ 4 გვერდი:
+
+მთავარი გვერდი (Home): წარმოდგენილი უნდა იყოს აკადემიის მისია, მოკლე აღწერა და მიმზიდველი სურათი ან ვიდეო.
+
+კურსების გვერდი (Courses): სია არსებული კურსების, მათ შორის მოკლე აღწერა, სურათები ან ვიდეოები.
+
+ჩვენს შესახებ (About Us): აკადემიის შესახებ დეტალური ინფორმაცია, მათ შორის ისტორია და გუნდის წევრების სექცია.
+
+კონტაქტი (Contact): სოციალური ლინკები (მაგ: Facebook, Instagram, Twitter) და საკონტაქტო ფორმა.
+
+
+
+HTML სტრუქტურული ელემენტები:
+ვებსაიტზე უნდა იყოს გამოყენებული შემდეგი ელემენტები:
+
+ 
+Headings (h1-h6): სხვადასხვა სექციის სათაურების შესაქმნელად.
+Paragraphs (p): ტექსტების გამოსაჩენად.
+Images (img): კურსების, აკადემიის და სხვა შესაბამისი კონტენტის წარმოსაჩენად.
+Videos: აკადემიის ან კურსების შესახებ მოკლე ვიდეოს დასამატებლად (ავტონომიური ვიდეო ან YouTube ჩასმული).
+Tables: სასურველია კურსების ან ფასების შედარებისთვის.
+Links (a): სხვა გვერდებზე გადასვლის ან გარე რესურსებზე ბმულების დასამატებლად.
+Lists (ul, ol): მომსახურების სია ან სხვა საჭირო მონაცემების სტრუქტურული სია.
+
+ასევე გამოიყენეთ css-ში მთლიანად ნასწავლი და განვლილი მასალა. -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>GOA - Goal Oriented Academy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #102a43;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #d9e2ec;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0ab00;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d9e2ec;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        form input[type="submit"] {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #005fa3;
+        }
+
+        video {
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GOA - Goal Oriented Academy</h1>
+        <nav>
+            <a href="#home">მთავარი</a>
+            <a href="#courses">კურსები</a>
+            <a href="#about">ჩვენს შესახებ</a>
+            <a href="#contact">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>ჩვენი მისია</h2>
+        <p>ჩვენ გვჯერა, რომ სწორი განათლება ცვლის მომავალს. GOA-ში ვზრდით მომავალ ლიდერებს!</p>
+        <video controls>
+            <source src="goa_intro.mp4" type="video/mp4">
+            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+        </video>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+        <h2>ჩვენი კურსები</h2>
+        <table>
+            <tr>
+                <th>კურსი</th>
+                <th>დონე</th>
+                <th>აღწერა</th>
+            </tr>
+            <tr>
+                <td>Python პროგრამირება</td>
+                <td>დაწყებული</td>
+                <td>სწავლე კოდირება პირველი დღიდან!</td>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>შუალედური</td>
+                <td>შექმენი ვებსაიტები HTML, CSS და JavaScript-ით.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>GOA-ის ისტორია</h2>
+        <p>GOA დაარსდა, რათა დაეხმაროს მოტივირებულ ახალგაზრდებს განათლებაში.</p>
+
+        <h3>გუნდის წევრები</h3>
+        <ul>
+            <li>დავით გოგოლაძე - დამფუძნებელი</li>
+            <li>ნინო - პროგრამირების მენტორი</li>
+            <li>ლუკა - ვებდეველოპმენტის მენტორი</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>დაგვიკავშირდით</h2>
+
+        <h3>სოციალური ბმულები</h3>
+        <ul>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+
+        <h3>კონტაქტის ფორმა</h3>
+        <form>
+            <label>სახელი:</label><br>
+            <input type="text" name="name"><br>
+            <label>მესიჯი:</label><br>
+            <textarea name="message" rows="4"></textarea><br>
+            <input type="submit" value="გაგზავნა">
+        </form>
+    </section>
+</body>
+</html>
+
