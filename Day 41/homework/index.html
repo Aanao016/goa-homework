@@ -1,0 +1,90 @@
+<!-- 2) კომენტარების სახით ახსენით თუ რა განხვავებაა inline, internal და external css გასტილვის გზებს შორის. -->
+<!--
+1) Inline CSS:
+   - გამოიყენება პირდაპირ HTML ელემენტის ატრიბუტში.
+   - გამოიყენება მხოლოდ კონკრეტულ ელემენტზე.
+   - არ არის რეკომენდებული დიდ პროექტებში, რადგან რთულია მართვა და ხელახლა გამოყენება.
+
+2) Internal CSS:
+   - წერია HTML დოკუმენტის <head> სექციაში <style> ტეგის შიგნით.
+   - გამოიყენება მთელი გვერდის სტილიზაციისთვის, როცა არ გინდა საგნობრივი ფაილი.
+   - მაგ: 
+     <style>
+       p { color: blue; }
+     </style>
+
+3) External CSS:
+   - CSS წესები წერია ცალკე .css ფაილში.
+   - ეს ფაილი ჩართულია HTML-ში <link> ტეგის მეშვეობით.
+   - საუკეთესო პრაქტიკაა დიდი და მრავალგვერდიანი საიტებისთვის, რადგან სტილები გადანაწილებულია და ხელახლა გამოიყენება.
+   - მაგ: 
+     <link rel="stylesheet" href="styles.css">
+-->
+<!-- 
+3) შექმენით 1 html-ის ფაილი, რომელშიც თავისმხრივ შექმნით რამდენიმე პარაგრაფს (p), თქვენი დავალებაა გასტილოთ ეს პარაგრაფები inline css-ის მეშვეობით. გამოიყენეთ css-ში მთლიანად ნასწავლი მასალა. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline CSS Example</title>
+    <style>
+    p {
+    color: blue; font-size: 18px; font-weight: bold; text-align: center;
+    color: green; font-style: italic; margin: 20px;
+    background-color: yellow; padding: 10px; border: 2px solid black;
+ }
+    </style>
+</head>
+<body>
+<!-- italic - ტექსტს ხდის მოღუნულს, ანუ დახრილ სტილში -->
+<!-- padding-ი ზრდის ელემენტის საერთო ზომას, რადგან სივრცე კონტენტსა და კიდეს შორის მატულობს -->
+<!-- solid — საზღვრის სტილი მყარი შეუწყვეტელი ხაზი -->
+<p>hello world</p>
+<p>hello world</p>
+<p>hello world</p>
+<p>hello world</p>
+
+</body>
+</html>
+
+<!-- 4) შექმენით 1 html-ის ფაილი, რომელშიც თავისმხრივ შექმნით რამდენიმე სათაურს (h1), თქვენი დავალებაა გასტილოთ ეს სათაურები internal css-ის მეშვეობით. გამოიყენეთ css-ში მთლიანად ნასწავლი მასალა. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+        color: aquamarine; font-size: 18px; font-weight: bold; text-align: center;
+        color: aquamarine; font-style: italic; margin: 20px;
+        background-color: green; padding: 10px; border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>helo world</h1>
+</body>
+</html>
+<!-- 5) შექმენით 1 html-ის ფაილი და 1 css-ის ფაილი შესაბამისი გაფართოებით, დააკავშირეთ ისინი ერთმანეთს. თქვენი დავალებაა html-ში შექმნათ რამდენიმე ღილაკი (button) და გასტილოთ ეს ღილაკები external css-ის მეშვეობით. გამოიყენეთ css-ში მთლიანად ნასწავლი მასალა. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Button Styling with External CSS</title>
+    <!-- External CSS-ის დაკავშირება -->
+    <style>
+         button {
+           background-color: black; 
+           color: aliceblue;
+           border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    
+<button>clicke me</button>
+</body>
+</html>
+
+
