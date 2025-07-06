@@ -1,0 +1,83 @@
+<!-- 1) გასტილეთ ვებგვერდზე ყველა h2 და h3 თქვენთვის სასურველი CSS-ის დეკლარაციებით, ოღონდ გამოიყენეთ მხოლოდ 1 CSS-ის წესი (ესეიგი ერთად უნდა დაწეროთ selector-ში და დააცილოთ მძიმით), შემდეგ კი გასტილეთ ყველა ღილაკი ცისფერი ფონის ფერით ვებგვერდზე ხოლო ის ღილაკები რომელბიც div-შია ჩასმული გასტილეთ მწვანე ფონის ფერით -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>სტილის მაგალითი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>ეს არის H2 სათაური</h2>
+    <h3>ეს არის H3 ქვესათაური</h3>
+    <button>საერთო ღილაკი</button>
+    <div>
+        <button>ღილაკი DIV-ში</button>
+    </div>
+<style>
+h2, h3 {
+    color: darkred;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+
+}
+
+div button {
+    background-color: green;
+}
+</style>
+ 
+ </body>
+ </html>
+
+
+
+ 
+
+<!-- 2) შექმენით 1 div ელემენტი, რომელშიც იქნება 1 სათაური, 1 პარაგრაფი და 1 ღილაკი`. თქვენი დავალებაა მიწვდეთ div-ში ელემენტებს inheritance-ს მეშვეობით და გასტილოთ ისინი კომპლექსურად. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>მიმწვდომა div-ში</title>
+  <style>
+    div h1 {
+      font-family: Georgia, serif;
+      color: darkgreen;
+      text-align: center;
+    }
+
+    div p {
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+
+    div button {
+      background-color: green;
+      color: white;
+
+    }
+
+    div button {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>სათაური</h1>
+    <p>ეს არის პარაგრაფი, რომელიც div-შია.</p>
+    <button>დააჭირე</button>
+  </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,95 @@
+<!-- 2) კომენტარების სახით ახსენით თითოეული ტერმინი: CSS Rule, Selector, Declaration, Property, Value და მოიყვანეთ მაგალითები, Internal CSS-ის გზით. -->
+<style>
+/*p- selector*/ 
+/*- css rule -{
+    color: blue;
+    background-color: antiquewhite; 
+}*/
+/*  Declaration -  color: blue;  */
+/* property-color*/
+/* value - green*/
+
+</style>
+
+<!-- 3) შექმენით div ტიპის ელემენტი, რომელშიც თავისმხრივ ჩასვამთ სხვადასხვა html-ის ელემენტებს. თქვენი დავალებაა მიწვდეთ style inheritance-ს მეშვეობით ელემენტებს და გასტილოთ ისინი ინდივიდუალურად. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div>
+        <p>this is a paragraph</p>
+        <a href="https://www.google.com">this is link></a>
+        <button>this is  button</button>
+        <h1>Title 1st level</h1>
+    </div>
+</head>
+<body>
+    <style>
+        div p {
+           color: green;
+           background-color: beige;     
+        }
+
+          div a {
+           color: yellow;
+           background-color: beige;     
+        }
+
+
+          div button {
+           color: purple;
+           background-color: beige;     
+        }
+
+          div h1 {
+           color:red;
+           background-color: beige;     
+        }
+
+    </style>
+</body>
+</html>
+<!-- 4) შექმენით ვებ-აიტი ნებისმიერ თემატიზაკე, გამოიყენეთ აქამდე მთლიანად ნასწავლი, განსაკუთრებით დღევანდელ გაკვეთილზე ახსნილი მასალა. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ჩემი პირველი საიტი</title>
+  <style>
+    
+    div h1 {
+      color: darkblue;
+    }
+    div p {
+      font-size: 16px;
+    }
+    div  a {
+      color: blue;
+    
+    }
+    div button {
+      background-color: darkblue;
+      color: white;
+
+    }
+  </style>
+</head>
+<body>
+      <div style="color: blue;">
+    <img src="https://cdn.pixabay.com/photo/2016/11/22/19/12/bmw-1840835_960_720.jpg" alt="BMW M4">
+    <h2 >BMW M4</h2>
+    <p="font-size: 16px; > ძლიერი სპორტული კუპე, 510 ცხენის ძალით და აგრესიული დიზაინით. იდეალურია მათთვის, ვინც ეძებს სისწრაფეს და სტილს.</p>
+    <button style="color:red;background-color: black ">Buy</button>
+  </div>
+  
+  <div class="container">
+    <h1>გამარჯობა!</h1>
+    <p>ეს არის ჩემი მარტივი ვებსაიტი.</p>
+    <a href="#">იხილეთ მეტი</a><br />
+    <button>დააწკაპეთ აქ</button>
+  </div>
+</body>
+</html>
