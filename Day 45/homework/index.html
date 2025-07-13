@@ -1,0 +1,94 @@
+<!-- 2) კომენტარების სახით ახსენით რა არის ID და Class სელეკტორები, ასევე დაწერეთ განხვავება მათ შორის. -->
+<!-- 
+ID selector:
+ID უნიკალურია. გამოიყენება ერთ ელემენტზე. მაგალითად, თუ გსურთ მხოლოდ 1 კონკრეტული ელემენტის გასტილება, გამოიყენეთ ID.
+
+Class selector:
+Class გამოიყენება ელემენტების ჯგუფზე. ანუ, ერთი და იგივე class შეიძლება მიანიჭოთ მრავალ ელემენტს და ერთნაირად გაასტილოთ ისინი.
+
+განსხვავება:
+- ID უნიკალურია და იწყება #: მაგ. #main
+- Class გამოიყენება მრავალ ელემენტზე და იწყება წერტილით (.): მაგ. .paragraph
+-->
+
+<!-- 3) შექმენით სათაური, პარაგრაფი, ღილაკი და კიდევ რამდენიმე ელემენტი. ყველა გასტილეთ ერთიანად class სელექტორის დახმარებით. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+  <h2 class="common-style">სათაური</h2>
+  <p class="common-style">ეს არის პარაგრაფი</p>
+  <button class="common-style">დაკლიკე</button>
+  <div class="common-style">ეს არის დამატებითი ელემენტი</div>
+  <span class="common-style">ეს არის სპანი</span>
+  
+</body>
+</html>
+<!-- 4) შექმენით 1 div ელემენტი, რომელშიც გექნებათ სათაური, 3 პარაგრაფი, ღილაკი. თქვენი დავალებაა წამოღოთ სათაური და ღილაკი, ხოლო შემდეგ გასტილოთ ისინი id selector-ების დახმარებით, სათაურებს კი მიეცით ერთნაირი class selector-ი და გასტილეთ ისინი ერთნაირად. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+        <h1 id="kkk">სათაური</h1>
+        <p class="aaa">პარაგრაფი 1</p>
+        <p class="aaa">პარაგრაფი 2</p>
+        <p class="aaa">პარაგრაფი 3</p>
+        <button id="kkk">click here</button>
+    </div>
+</body>
+</html>
+<!-- 5) შექმენით ვებ-საიტი ნებისმიერ თემატიზაკე, გამოიყენეთ აქამდე მთლიანად ნასწავლი, განსაკუთრებით დღევანდელ გაკვეთილზე ახსნილი მასალა. -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ყავის კუთხე</title>
+  <link rel="stylesheet" href="./hw.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <h1 id="logo">☕ ყავის კუთხე</h1>
+    <p class="slogan">საუკეთესო ყავა ქალაქში!</p>
+  </header>
+
+  <section class="menu">
+    <h2 class="section-title">ჩვენი მენიუ</h2>
+
+    <div class="item">
+      <h3 class="item-title">ამერიკანო</h3>
+      <p class="item-description">სუფთა და ძლიერი შავი ყავა</p>
+    </div>
+
+    <div class="item">
+      <h3 class="item-title">კაპუჩინო</h3>
+      <p class="item-description">ყვავილოვანი ქაფით და რძით</p>
+    </div>
+
+    <div class="item">
+      <h3 class="item-title">ლატე</h3>
+      <p class="item-description">რბილი და არომატული სასმელი</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">დაგვიკავშირდით</h2>
+    <p>მისამართი: თბილისის ქუჩა 123</p>
+    <p>ტელეფონი: +995 555 12 34 56</p>
+    <button id="contact-btn">დაგვიკავშირდი</button>
+  </section>
+
+</body>
+</html>

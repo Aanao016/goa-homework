@@ -1,0 +1,69 @@
+/* საერთო სტილი მთლიანი გვერდისთვის */
+body {
+  font-size: medium;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+#main-header {
+  background-color: #6d4c41;
+  color: white;
+  text-align: center;
+}
+
+#logo {
+  font-size: 36px;
+}
+
+.slogan {
+  font-size: 18px;
+  color: #ffe0b2;
+}
+
+.menu {
+  background-color: #fff3e0;
+}
+
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  color: #5d4037;
+}
+
+.item {
+  background-color: #ffffff;
+}
+
+.item-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.item-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.contact {
+  padding: 30px 20px;
+  background-color: #efebe9;
+  text-align: center;
+}
+
+#contact-btn {
+  background-color: #8d6e63;
+  color: white;
+  font-size: 16px;
+}
+
+#contact-btn {
+  background-color: #6d4c41;
+}
+
+
+#footer {
+  background-color: #4e342e;
+  color: white;
+  text-align: center;
+  font-size: medium;
+}
