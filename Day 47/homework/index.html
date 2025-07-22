@@ -1,0 +1,94 @@
+<!-- 2) კომენტარების სახით ახსენით რა არის specifity და როგორ მუშაობს იგი. -->
+
+<!-- 
+Specificity  განსაზღვრავს, რომელი CSS წესი გადატყდება, 
+როდესაც ერთსა და იმავე ელემენტზე მოქმედებს რამდენიმე სხვადასხვა სტილი.
+-->
+
+<!-- 3) ჩამოთვალეთ css priority-ს ყველა დონე, ახსენეთ რომელი რომელ ადგილს იკავებს იერარქიაში და მოიყვანეთ მაგალითებიც. -->
+
+<!-- 
+CSS Priority (სტილების პრიორიტეტი) განსაზღვრავს, რომელი სტილი გადატყდება თუ რამდენიმე მოქმედებს ერთ ელემენტზე.
+
+1. ტიპის სელექტორები (element selector) 
+   მაგ: h1 { color: blue; }
+
+2. კლასები, ატრიბუტები და ფსევდო-კლასები
+   მაგ: .title { color: green; }
+
+3. ID სელექტორები
+   მაგ: #main { color: red; }
+
+4. Inline სტილი (ელემენტზე პირდაპირ დაწერილი)
+   მაგ: <h1 style="color: orange">
+
+5. !important - override-ის ყველაზე ძლიერი გზა
+   მაგ: p { 
+        color: black; 
+   }
+
+
+-->
+
+<!-- 4) შექმენით დიდ ვებ-საიტი ნებისმიერ თემატიკაზე, გამოიყენეთ მთლიანად, განსაკუთრებით დღევანდელ გაკვეთილზე ახსნილი მასალა. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horror movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <p style="text-align: center;">
+  <span style="color: red;
+  background-color:black;">horror</span>
+</p>
+
+<!-- <span> გამოიყენება მცირე ნაწილის გამოსაყოფად.-->
+
+
+<h2 class="heading">
+  <span style="color: chartreuse;">
+    This site is based on horror movies.
+  </span>
+</h2>
+
+
+   <h2 class="heading">
+  <span style="color:green; ">
+    Those films are 18+ because they are so dangerous for children!
+  </span>
+</h2>
+
+
+<h3 class="head2">
+  <span style="color: orange;">
+    Don't watch alone!
+  </span>
+</h3>
+
+
+<h3 class="head2">
+  <span style="color: purple;">
+    Some films contain depictions of blood, death, or occult themes that may conflict with the moral or religious views of viewers.
+  </span>
+</h3>
+</div>
+
+<div>
+<h4>When the color is <a style="color: red;">red,</a>  it's the most dangerous movie, but when the color is <a style="color: orange;">orange,</a>
+    it's a mildly dangerous movie, but when it's <a style="color: green;" >green,</a> it's not so dangerous.</h4>
+
+  <ol>
+  <li style="color:green"><a href="https://ge.movie/movie/6168/mama">mama</a></li>
+  <li style="color:red"><a href="https://mykadri.tv/7967-boroti-mkvdrebis-agzeveba-qartulad.html">evil dead rise</a></li>
+  <li style="color:red"><a href="https://mykadri.tv/5056-monazoni-the-nun-monazvnis-wyevla.html">the nun</a></li>
+  <li style="color:orange"><a href="https://mykadri.tv/5056-monazoni-the-nun-monazvnis-wyevla.html">tarot</a></li>
+  <li style="color:orange"><a href="https://mykadri.tv/10118-daabrune-is-qartulad-bring-her-back-qartulad.html">bring her back</a></li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+#head {
+    color: cornflowerblue;
+    background-color: blueviolet;
+}
+
+.par {
+    color: green;
+    background-color: chartreuse;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.highlight {
+  color: green;
+}
+
+#unique {
+  color: orange;
+}

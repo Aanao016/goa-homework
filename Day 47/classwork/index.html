@@ -1,0 +1,66 @@
+<!--  1) კომენტარების სახით ახსენით რა არის specifity და როგორ მუშაობს იგი. -->
+
+<!--
+specifity ნიშნავს იმას რამდენად ძლიერია კონკრეტული CSS სელექტორი.
+როცა ერთ ელემენტზე ვრცელდება რამდენიმე სტილი.
+-->
+
+<!-- 2) ვებ-საიტზე შექმენით 1 ცალი h1 ელემენტი, 3 ცალი პარაგრაფი. შემდეგ კი h1-ს გაუწერეთ id-ი და გასტილეთ იგი id-ს გზით, ხოლო პარაგრაფებს class-ები და გასტილეთ ისინი კლასებით. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="head">heading</h1>
+    <p class="par">Paragraph 1</p>
+    <p class="par">Paragraph 2</p>
+    <p class="par">Paragraph 3</p>
+</body>
+</html>
+
+<!-- 3) ჩამოთვალეთ css priority-ს ყველა დონე, ახსენეთ რომელი რომელ ადგილს იკავებს იერარქიაში და მოიყვანეთ მაგალითებიც. -->
+<!--
+1) ბრაუზერის default სტილები (უმცირესი პრიორიტეტი)
+   მაგ: <h1> ავტომატურად დიდია, თუ სხვა სტილი არ წაუწერე.
+
+2) External CSS (გარე ფაილი — მაგ: styles.css)
+   მაგ: h1 { color: blue; }
+
+3) Internal CSS (ფაილში <style> ტეგის შიგნით)
+   მაგ:
+   <style>
+     h1 { color: green; }
+   </style>
+
+4) Inline CSS (ელემენტზე პირდაპირ მიწერილი style ატრიბუტი)
+   მაგ:
+   <h1 style="color: red;">Hello</h1>
+
+5) !important (ყველაზე ძლიერი ძალით, ყველა ზემოთ ჩამოთვლილზე მაღლა დგას)
+   მაგ:
+   h1 { color: black !important; }
+
+-->
+
+<!-- 4) ვებ-საიტზე შემოიტანეთ 4 ცალი h1-ი, ყველა h1-ი გასტილეთ ერთი და იგივე სტილით element selector-ების მეშვეობით, მხოლოდ მეორე h1-ს უკვე გადაეცით class selector-ი და გასტილეთ იგი სხვანაირად, მესამე h1-ს გადაეცით id selector-ი და გასტილეთ იგი id-ის მეშვეობით, ხოლო ბოლო h1-ის გასასტილად გამოიყენეთ style ატრიბუტი ანუ inline css-ი. --> 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Priority Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>ეს არის პირველი h1</h1>
+  <h1 class="highlight">ეს არის მეორე h1</h1>
+  <h1 id="unique">ეს არის მესამე h1</h1>
+  <h1 style="color: red;">ეს არის მეოთხე h1</h1>
+
+</body>
+</html>
