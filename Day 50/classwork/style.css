@@ -1,0 +1,29 @@
+.htree {
+    color: violet;
+    background-color: blueviolet;
+    
+}
+
+
+#heading {
+    text-align: center;
+    background-color: rgb(37, 69, 165);
+    color:(rgb(0, 34, 255, 0.246))
+
+}
+
+  body {
+      background-color: rgb(15, 15, 30); 
+      color: rgb(224, 224, 224);
+      font-size: 16px; 
+    }
+
+    nav {
+      background-color: #0f3460; 
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      font-size: medium;
+      color: #ffb347;
+    }
