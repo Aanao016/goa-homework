@@ -1,0 +1,58 @@
+#dmine {
+    color: black;
+    background-color: aqua;
+    text-align: center;
+
+}
+
+.div1 {
+color: blue;
+background-color: cadetblue;
+text-align: center;
+
+}
+
+.lable2 {
+color: black;
+background-color:darkcyan;
+text-align: center;
+}
+
+.div3 {
+color: blue;
+background-color: aquamarine;
+}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #d35400;
+      text-align: center;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    /* Styling links */
+    a {
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #d35400;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #b34700;
+    }

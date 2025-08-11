@@ -1,0 +1,41 @@
+<!-- 2) ააგეთ მრავალ გვერდიანი ვებსაიტი და ლამაზად გასტილეთ, აუცილებლად გამოიყენეთ დღეს ნასწავლი მასალა(text-decoration, font-family(დააიმპორტეთ google fonts-დან სასურველი ფონტი), text-transform, text-shadow) -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>მთავარი გვერდი</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      color: #2c3e50;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+      text-transform: capitalize;
+      transition: color 0.3s ease;
+    }
+
+  </style>
+</head>
+<body>
+
+    <h1>ჩემი მრავალ გვერდიანი საიტი</h1>
+    <nav>
+      <a href="index.html">მთავარი</a>
+      <a href="about.html">ჩვენს შესახებ</a>
+      <a href="contact.html">კონტაქტი</a>
+    </nav>
+
+    <h2>მოგესალმებით!</h2>
+
+    <p style="color: blue;">ეს არის მთავარი გვერდი. აქ შეგიძლიათ გაეცნოთ ჩვენს ვებსაიტს და ნახოთ სხვა გვერდები.</p>
+</body>
+</html>

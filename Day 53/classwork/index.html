@@ -1,0 +1,47 @@
+<!-- 1) კომენტარების სახით ახსენით რა არის pseudo selectors, ჩამოწერეთ თითოეული და ახსენით მათი დანიშNულებები. -->
+
+ Pseudo-classes (პსევდო კლასები) — სელექტორები, რომლებიც არჩევენ ელემენტებს მათი მდგომარეობის ან პარამეტრების მიხედვით:
+    :hover — ირჩევს ელემენტს, როდესაც მაუსის კურსორი ზემოთ არის.
+    :active — ირჩევს ელემენტს, როდესაც ის აქტიურია (მაგალითად, როდესაც ბმული დაჭერილია).
+    :link -
+
+<!-- 2) შექმენით მულტიფუნქციური ვებ-გვერდი ნებისმიერი თემატიკის შესახებ, გამოიყენეთ აქამდე მთლიანად ნასწავლი, განსაკუთრებით დღევანდელ გაკვეთილზე ახსნილი მასალა (pseudo selectors - :link, :active, :hover) -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tom and Jerry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 class="title">Tom and Jerry</h1>
+    <p class="subtitle">მულტფილმის ყველაზე ცნობილი კატა და თაგვი</p>
+
+
+  <nav id="main-nav" class="nav">
+    <a class="nav-link" href="#history">ისტორია</a>
+    <a class="nav-link" href="#characters">მთავარი პერსონაჟები</a>
+    <a class="nav-link" href="#gallery">გალერეა</a>
+  </nav>
+
+  <div id="history" class="content-block">
+    <h2 class="block-title">ისტორია</h2>
+    <p class="block-text">
+      Tom and Jerry არის ამერიკული მულტფილმი, რომელიც 1940 წელს შექმნა უილიამ ჰანა და ჯოზეფ ბარბერა. ეს მულტფილმი მოგვითხრობს კატა Tom-ისა და თაგვი Jerry-ს თავგადასავლებს და მათ შორის ხუმრობებსა და ძაფების ომს.
+    </p>
+  </div>
+
+  <div id="characters" class="content-block">
+    <h2 class="block-title">მთავარი პერსონაჟები</h2>
+    <ul class="character-list">
+      <li class="character-item"><strong>Tom</strong> — ჭკვიანი, მაგრამ ხშირად მოულოდნელად დამარცხებული კატა.</li>
+      <li class="character-item"><strong>Jerry</strong> — პატარა და წვრილი თაგვი, რომელიც ხშირად ანგრევს Tom-ის გეგმებს.</li>
+      <li class="character-item"><strong>Spike</strong> — ძლიერი და შემაშინებელი ძაღლი, რომელიც იცავს Jerry-ს.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
