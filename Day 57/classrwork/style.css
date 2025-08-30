@@ -1,0 +1,16 @@
+input [type="text"] {
+    color: red;
+    background-color: greenyellow;
+    text-align: center;
+    font-family: cursive;
+    
+}
+
+.from {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    text-align: center;
+}
+
+

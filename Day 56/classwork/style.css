@@ -1,0 +1,49 @@
+.ol1 {
+    list-style-type:disc;
+    
+}
+
+.ul1 {
+    list-style-position: inside;
+}
+
+.ol2 {
+    list-style-image: url("./imagen.jpg");
+}
+
+.ul2 {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    list-style-image: none;
+}
+
+
+
+
+
+ body {
+      background-color: #f0f0f0;
+    }
+
+    form {
+      background: white;
+    }
+
+    h2 {
+      text-align: center;
+      text-shadow: 2px 2px 4px #aaa;
+    }
+
+    input [type = "email"] {
+      font-size: 14px;
+    }
+
+    button {
+      background: #0077ff;
+      color: white;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #0055cc;
+    }

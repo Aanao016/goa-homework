@@ -22,6 +22,7 @@ text-align: center;
 color: blue;
 background-color: aquamarine;
 }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #fff8f0;
@@ -42,7 +43,7 @@ background-color: aquamarine;
 
     /* Styling links */
     a {
-      color: #e67e22;
+      color: cyan;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
