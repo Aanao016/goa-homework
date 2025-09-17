@@ -1,0 +1,37 @@
+ <!-- 1) შექმენით div-ი 300x300-ზე მიეცით მას უკანა ფონის ფერი. მის შიგნით ჩასვით კიდევ 5 div-ი 50x50-ზე, გაუწერეთ მათაც უკანა ფონის ფერი და მოათავსედ ეს div-ები მოშველი ელემენტის ზუსტად შუაში, ისე რომ ისინი იყვნენ ჰორიზონტალურად განლაგებულნი. -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Layout</title>
+  <style>
+    .container {
+      width: 300px;
+      height: 300px;
+      background-color: tan; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      gap: 10px;              
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: brown; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+
+</body>
+</html>
+

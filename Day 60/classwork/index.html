@@ -1,0 +1,52 @@
+<!-- # 1) შექმენით ორი პარაგრაფი და დააშორეთ ისინი ერთმანეთისგან margin-ის მეშვეობით
+
+# 2) შექმენით div-ი, რომლის ზომაც იქნება 100x100 პიქსელი.
+
+# დაუმატეთ ამ დივს border-ი, რომელიც div-ის თითოეულ მხარეს იქნება განსხვავებული ზომის, ფორმის და სტილის.
+# div-ს გაუწერე უკანა ფონის ფერი და ჩასვი მასში პარაგრაფი, სადაც ეწერება "Hello Box Model".
+# padding-ის მეშვეობით შეეცადე div-ის შუაში გადაადგილო ეს პარაგრაფი.
+
+# საბოლოოდ, პარაგრაფსაც გაუწერე padding-ი და უკანა ფონის ფერი. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        p {
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border-top: 5px solid red; 
+            border-right: 10px dotted blue; 
+            border-bottom: 15px dashed green; 
+            border-left: 20px double purple; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            padding: 10px; 
+        }
+
+        .box p {
+            padding: 5px;
+            background-color: #ffcc00; 
+        }
+    </style>
+</head>
+<body>
+
+    <p>ეს არის პირველი პარაგრაფი.</p>
+
+    <p>ეს არის მეორე პარაგრაფი.</p>
+
+    <div class="box">
+        <p>Hello Box Model</p>
+    </div>
+
+</body>
+</html>
