@@ -1,0 +1,120 @@
+<!-- 2) კომენტარების სახით ახსენით რას აკეთებს placeholder და focus ფსევდო სელექტორები -->
+<!-- ::placeholder — ეს ფსევდო სელექტორი გამოიყენება იმ ტექსტის სტილიზაციისთვის, რომელიც არის ინპუტის ან ტექსტური შიდა ფორმის შერჩევის ადგილას, სანამ მომხმარებელი არაფერს ჩაწერს. -->
+<!-- 3) შექმენით ვესაიტი სადაც გექნებათ 5 ელემენტიანი დაულაგებელი საი და თქვენი დავალებაა გასტილოთ სია დღეს ნასწავლი მასალის დახმარებით. -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>დაულაგებელი სია</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+        ul {
+        list-style-type: none; 
+        padding: 0;
+        }
+
+        li {
+        background-color: #f4f4f4;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        }
+
+  </style>
+</head>
+<body>
+  <h1>ჩემი სიები</h1>
+  <ul>
+    <li>ელემენტი 1</li>
+    <li>ელემენტი 2</li>
+    <li>ელემენტი 3</li>
+    <li>ელემენტი 4</li>
+    <li>ელემენტი 5</li>
+  </ul>
+</body>
+</html>
+
+<!-- 4) შექმენით ვებსაიტი ნებისმიერი თემატიკის შესახებ, გამოიყენეთ მთლიანად ნასწავლი და ბოლო გაკვეთილზე ახსნილი მასალა (style-list, style-form). -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>დაფარული ფორმა და სია</title>
+  <style>
+form {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus {
+  background-color: lightblue;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>ჩვენი ფორმა და სია</h1>
+
+  <form action="#" method="post">
+    <label for="username">მომხმარებლის სახელი:</label>
+    <input type="text" id="username" name="username" placeholder="ჩაწერეთ თქვენი სახელი" required><br><br>
+
+    <label for="email">ელ. ფოსტა:</label>
+    <input type="email" id="email" name="email" placeholder="ჩაწერეთ თქვენი ელ. ფოსტა" required><br><br>
+
+    <button type="submit">გაგზავნა</button>
+  </form>
+
+  <h2>ჩვენი სიები</h2>
+  <ul>
+    <li>პუნქტი 1</li>
+    <li>პუნქტი 2</li>
+    <li>პუნქტი 3</li>
+    <li>პუნქტი 4</li>
+    <li>პუნქტი 5</li>
+  </ul>
+</body>
+</html>
+
+
+
